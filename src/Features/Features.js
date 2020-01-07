@@ -1,3 +1,4 @@
+  
 import React, { Component }from 'react';
 
 class Features extends Component {
@@ -30,7 +31,6 @@ class Features extends Component {
     render() {
         return (
             <section className="main__form">
-                <h3>TECH SPECS AND CUSTOMIZATIONS</h3>
                 {this.onFeatures()}
             </section>
         )

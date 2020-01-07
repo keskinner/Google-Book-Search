@@ -78,21 +78,19 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <h1>ELF Computing</h1>
-          <h3>Laptops</h3>
-          <h5>Customize your laptop</h5>  
+          <h1>ELF Computing | Laptops</h1> 
         </header>      
         <main>
-          <section className="main__form">
-            <h3>TECH SPECS AND CUSTOMIZATIONS</h3>
+          <form className="main__form">
+          <h3>Customize your laptop</h3>
             <Features 
             features={this.props.features}
             selected={this.state.selected}
             updateFeature={(key, item) => this.updateFeature(key, item)}
             />
-          </section>
+          </form>
           <section className="main__summary">
-            <h3>NEW GREENLEAF 2018</h3>
+            <h3>Your cart</h3>
             <Summary selected={this.state.selected} /> 
                         
           </section>
@@ -102,4 +100,4 @@ class App extends Component {
   }
 }
 
-export default App; 
+export default App;  
